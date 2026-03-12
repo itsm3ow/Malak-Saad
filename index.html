@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malak Saad Portfolio</title>
     <style>
+        /* تعريف الألوان الأساسية */
         :root {
             --bg-color: #fdf2f5;
             --main-pink: #f48fb1;
@@ -32,6 +33,7 @@
             text-align: center;
         }
 
+        /* الشريط العلوي */
         .header {
             display: flex;
             justify-content: space-between;
@@ -49,6 +51,7 @@
             letter-spacing: 3px;
         }
 
+        /* الاسم الرئيسي MALAK SAAD */
         .main-name {
             font-size: clamp(40px, 12vw, 110px);
             font-weight: 900;
@@ -59,7 +62,7 @@
             letter-spacing: -2px;
         }
 
-        /* الكبسولة الوردية */
+        /* الكبسولة الوردية الوسطى */
         .capsule-box {
             background-color: #f8bbd0;
             height: 150px;
@@ -71,17 +74,16 @@
             align-items: center;
             position: relative;
             box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 1px solid rgba(236, 64, 122, 0.1); /* إضافة حدود ناعمة */
         }
 
-        /* الرمز المصحح <3 وبحجم أكبر */
-        .heart-symbol {
-            font-size: 70px; /* حجم أكبر للوضوح */
-            font-weight: 900;
-            color: white; /* لون أبيض ليناسب الستايل */
-            letter-spacing: -10px; /* جعل الرموز متقاربة جداً لتشكل القلب */
-            line-height: 0; /* تمركز عمودي أفضل */
+        /* رمز القطة الجديد 🐈 وحجمه */
+        .cat-symbol {
+            font-size: 80px; /* حجم كبير وواضح للقطة */
+            /* يمكنك تغيير القطة هنا، مثلاً وجه قطة فقط: 🐱 */
         }
 
+        /* كلمة WELCOME تحت الكبسولة */
         .welcome-label {
             position: absolute;
             bottom: -35px;
@@ -91,6 +93,7 @@
             color: var(--dark-pink);
         }
 
+        /* الشريط السفلي */
         .footer {
             display: flex;
             justify-content: space-between;
@@ -115,7 +118,7 @@
         <h1 class="main-name">MALAK SAAD</h1>
 
         <div class="capsule-box">
-            <span class="heart-symbol">&lt;3</span>
+            <span class="cat-symbol">🐈</span>
             <div class="welcome-label">/WELCOME/</div>
         </div>
 
