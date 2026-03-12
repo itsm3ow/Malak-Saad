@@ -5,19 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malak Saad Portfolio</title>
     <style>
-        /* تعريف الألوان الأساسية */
         :root {
             --bg-color: #fdf2f5;
             --main-pink: #f48fb1;
             --dark-pink: #ad1457;
-            --text-gray: #555;
+            --text-gray: #777;
         }
 
         body {
             margin: 0;
             padding: 0;
             background-color: var(--bg-color);
-            /* تدرج بسيط للخلفية */
             background: linear-gradient(180deg, #fce4ec 0%, #ffffff 100%);
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
@@ -25,20 +23,19 @@
             align-items: center;
             height: 100vh;
             color: var(--dark-pink);
+            overflow: hidden;
         }
 
         .container {
             width: 90%;
             max-width: 900px;
             text-align: center;
-            position: relative;
         }
 
-        /* النصوص العلوية */
         .header {
             display: flex;
             justify-content: space-between;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: bold;
             letter-spacing: 2px;
             margin-bottom: 20px;
@@ -46,54 +43,59 @@
         }
 
         .year-label {
-            font-size: 16px;
+            font-size: 14px;
             margin-bottom: 10px;
             display: block;
+            letter-spacing: 3px;
         }
 
-        /* الاسم الكبير - تم تغيير طريقة التلوين لضمان الظهور */
         .main-name {
-            font-size: clamp(50px, 12vw, 120px);
+            font-size: clamp(40px, 12vw, 110px);
             font-weight: 900;
             margin: 0;
             text-transform: uppercase;
-            color: #ec407a; /* لون ثابت وواضح */
+            color: #ec407a;
             line-height: 1;
             letter-spacing: -2px;
         }
 
-        /* الشكل البيضاوي (الكبسولة) */
+        /* الكبسولة الوردية */
         .capsule-box {
             background-color: #f8bbd0;
             height: 150px;
-            width: 80%;
+            width: 85%;
             margin: 40px auto;
             border-radius: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid rgba(0,0,0,0.05);
             position: relative;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
         }
 
-        .emoji-face {
-            font-size: 80px;
+        /* رمز القلب بدل النظارات */
+        .heart-symbol {
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: -5px;
+            transform: rotate(0deg);
         }
 
         .welcome-label {
             position: absolute;
-            bottom: -30px;
+            bottom: -35px;
             font-weight: bold;
             letter-spacing: 5px;
             font-size: 14px;
+            color: var(--dark-pink);
         }
 
-        /* الروابط السفلية */
         .footer {
             display: flex;
             justify-content: space-between;
-            margin-top: 70px;
-            font-size: 11px;
+            margin-top: 80px;
+            font-size: 10px;
             font-weight: bold;
             color: var(--text-gray);
         }
@@ -113,14 +115,11 @@
         <h1 class="main-name">MALAK SAAD</h1>
 
         <div class="capsule-box">
-            <span class="emoji-face"> <3 </span>
+            <span class="heart-symbol">3></span>
             <div class="welcome-label">/WELCOME/</div>
         </div>
 
-        <div class="footer">
-        </div>
     </div>
 
 </body>
 </html>
-
